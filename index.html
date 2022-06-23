@@ -10,22 +10,39 @@
 <body>
     <div class="maincontainer">
         <div class="inner">
-            <p class="heading">Password Generator</p>
-
-
-            <div class="pass_box">
-
-                 <span id="pass_display"></span>
-
-            </div>
             
-            <div class="input_box">
-                
-                <div class="box" id="box1">
-                    
-                    <span class="tick" id="pas_len">Password Length</span>
-                    <input type="number" class="length" id="len_input">
+            <header>
+        
+            <h1>Password Generator</h1>
+            </header>
+
+            <div class="box">
+                <div class="box-header">
+                    <h2>Generate a Password</h2>
                 </div>
+                <div class="box-body">
+                    <textarea
+                    readonly
+                    id="password"
+                    placeholder="Click the button to generarte a pasword!"
+                    aria-label="Generated Password"
+                    ></textarea>
+                </div>
+                <div class="box-footer">
+                    <button id="generate class="btn">Gernerate Password</button>
+                    <div id="password-criteria"></div>
+                </div>  
+                
+            </div>
+        </div>
+    </div>
+        
+   
+
+
+
+
+
 
      
     <script src="script.js"></script> 
