@@ -54,6 +54,6 @@ criteria.innerHTML += `<input type="checkbox" id="number" name="number">
         return result;
       }
       
-      alert(makePassword(length));
+      alert(makePassword());
 
     });
