@@ -24,4 +24,36 @@ criteria.innerHTML += `<input type="checkbox" id="number" name="number">
         var result = ""
         var characters = "abcdefghijklmnopqrstuvwxyz"
 
-    
+        if(number.checked) {
+            characters = characters + '0123456789'
+          } 
+        
+          if(uppercase.checked) {
+            characters = characters + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+           } 
+           if(specialCharacter.checked) {
+            characters = characters + '!#$&*'
+         } 
+
+         characterLength = characters.length
+
+         var length = prompt("Pick a number length for Password (8-128)")
+
+         if (length < 8 || length > 128) {
+         alert("error; Invalid amount of characters")
+         return
+    }
+
+    console.log(length)
+
+    for(var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characterLength));
+        }
+       
+       
+        return result;
+      }
+      
+      alert(makePassword(length));
+
+    });
