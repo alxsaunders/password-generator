@@ -15,7 +15,7 @@ criteria.innerHTML += `<input type="checkbox" id="number" name="number">
 <input type="checkbox" id="special-charachter" name="special-charachter">
 <label for="special-charachter"> Would you like special charachters in your password?</label><br>`; 
 
- generateBtn.addEventListener("click", (writePassword) => {
+ generateBtn.addEventListener("click", (makePassword) => {
 
     function makePassword(length) {
         let number = document.getElementById("number");
@@ -54,6 +54,6 @@ criteria.innerHTML += `<input type="checkbox" id="number" name="number">
         return result;
       }
       
-      alert(makePassword());
+      document.getElementById('password').value =(makePassword());
 
     });
